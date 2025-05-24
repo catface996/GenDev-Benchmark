@@ -25,7 +25,8 @@ GenDev-Benchmark/
 │   │   │   └── spring_cloud_microservices.md # Spring Cloud微服务架构实现
 │   │   └── hard/                             # 高难度后端案例
 │   │       ├── distributed_system.md         # 分布式系统设计与实现
-│   │       └── distributed_transaction.md    # 分布式事务处理系统设计与实现
+│   │       ├── distributed_transaction.md    # 分布式事务处理系统设计与实现
+│   │       └── skiplist_storage_engine.md    # 基于SkipList实现MySQL存储引擎
 │   ├── middleware/                           # 中间件案例
 │   │   └── medium/                           # 中难度中间件案例
 │   │       └── redis_cache_strategy.md       # Redis分布式缓存策略实现
@@ -89,6 +90,7 @@ GenDev-Benchmark/
 - **高难度**：
   - [分布式系统设计与实现](development/backend/hard/distributed_system.md)
   - [分布式事务处理系统设计与实现](development/backend/hard/distributed_transaction.md)
+  - [基于SkipList实现MySQL存储引擎](development/backend/hard/skiplist_storage_engine.md)
 
 #### 中间件
 - **中难度**：[Redis分布式缓存策略实现](development/middleware/medium/redis_cache_strategy.md)

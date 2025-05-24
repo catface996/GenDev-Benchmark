@@ -22,7 +22,8 @@ development/
 │   │   └── spring_cloud_microservices.md # Spring Cloud微服务架构实现
 │   └── hard/                        # 高难度后端案例
 │       ├── distributed_system.md    # 分布式系统设计与实现
-│       └── distributed_transaction.md # 分布式事务处理系统设计与实现
+│       ├── distributed_transaction.md # 分布式事务处理系统设计与实现
+│       └── skiplist_storage_engine.md # 基于SkipList实现MySQL存储引擎
 ├── middleware/                      # 中间件案例
 │   ├── easy/                        # 低难度中间件案例
 │   ├── medium/                      # 中难度中间件案例
@@ -64,6 +65,7 @@ development/
 - **高难度**：
   - [分布式系统设计与实现](backend/hard/distributed_system.md)
   - [分布式事务处理系统设计与实现](backend/hard/distributed_transaction.md)
+  - [基于SkipList实现MySQL存储引擎](backend/hard/skiplist_storage_engine.md)
 
 ### 中间件
 中间件案例涵盖了缓存、消息队列、服务网关等技术的应用和优化。
