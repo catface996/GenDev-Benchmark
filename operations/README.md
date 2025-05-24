@@ -2,6 +2,59 @@
 
 本目录包含用于评估AI代码生成工具在DevOps和运维方面能力的基准测试案例。
 
+## 目录结构
+
+```
+operations/
+├── container/                       # 容器化技术案例
+│   ├── easy/                        # 低难度容器案例
+│   │   └── simple_docker_deployment.md # 简单Docker容器部署
+│   ├── medium/                      # 中难度容器案例
+│   └── hard/                        # 高难度容器案例
+│       └── microservices_deployment.md # 微服务架构部署与管理
+├── cicd/                            # CI/CD流水线案例
+│   ├── easy/                        # 低难度CI/CD案例
+│   ├── medium/                      # 中难度CI/CD案例
+│   │   └── cicd_pipeline_setup.md   # CI/CD流水线配置
+│   └── hard/                        # 高难度CI/CD案例
+├── monitoring/                      # 监控和日志案例
+│   ├── easy/                        # 低难度监控案例
+│   ├── medium/                      # 中难度监控案例
+│   └── hard/                        # 高难度监控案例
+├── infrastructure/                  # 基础设施即代码案例
+│   ├── easy/                        # 低难度基础设施案例
+│   ├── medium/                      # 中难度基础设施案例
+│   └── hard/                        # 高难度基础设施案例
+└── security/                        # 安全运维案例
+    ├── easy/                        # 低难度安全运维案例
+    ├── medium/                      # 中难度安全运维案例
+    └── hard/                        # 高难度安全运维案例
+```
+
+## 技术领域
+
+### 容器化技术
+容器化技术案例涵盖了从简单Docker容器部署到复杂微服务架构的容器编排。
+
+#### 案例列表
+- **低难度**：[简单Docker容器部署](container/easy/simple_docker_deployment.md)
+- **高难度**：[微服务架构部署与管理](container/hard/microservices_deployment.md)
+
+### CI/CD流水线
+CI/CD流水线案例涵盖了持续集成、持续部署和自动化测试流程的设计与实现。
+
+#### 案例列表
+- **中难度**：[CI/CD流水线配置](cicd/medium/cicd_pipeline_setup.md)
+
+### 监控和日志
+监控和日志案例涵盖了系统监控、日志收集、告警配置和可观测性实现。
+
+### 基础设施即代码
+基础设施即代码案例涵盖了使用Terraform、CloudFormation等工具进行基础设施自动化管理。
+
+### 安全运维
+安全运维案例涵盖了安全配置、漏洞管理、合规性检查和安全自动化。
+
 ## 难度级别
 
 ### 低难度 (Easy)
@@ -24,7 +77,7 @@
 
 ## 使用方法
 
-1. 选择适合的难度级别
+1. 选择适合的运维领域和难度级别
 2. 查看对应目录下的案例描述
 3. 使用AI代码生成工具生成运维解决方案
 4. 根据评估标准对生成的配置和脚本进行评分
