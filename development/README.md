@@ -2,6 +2,42 @@
 
 本目录包含用于评估AI代码生成工具在软件研发方面能力的基准测试案例。
 
+## 目录结构
+
+```
+development/
+├── easy/                           # 低难度研发案例
+│   ├── frontend/                   # 前端开发案例
+│   │   └── android_ui_basic.md     # Android基础UI组件实现
+│   ├── backend/                    # 后端开发案例
+│   │   └── spring_boot_rest_api.md # Spring Boot RESTful API实现
+│   ├── middleware/                 # 中间件案例
+│   ├── database/                   # 数据库案例
+│   │   └── mysql_query_optimization.md # MySQL基础查询优化
+│   └── algorithm/                  # 算法案例
+│       └── array_manipulation.md   # 数组操作基础算法
+├── medium/                         # 中难度研发案例
+│   ├── frontend/                   # 前端开发案例
+│   │   └── react_state_management.md # React状态管理实现
+│   ├── backend/                    # 后端开发案例
+│   │   ├── design_patterns.md      # 设计模式应用
+│   │   └── spring_cloud_microservices.md # Spring Cloud微服务架构实现
+│   ├── middleware/                 # 中间件案例
+│   │   └── redis_cache_strategy.md # Redis分布式缓存策略实现
+│   ├── database/                   # 数据库案例
+│   └── algorithm/                  # 算法案例
+└── hard/                           # 高难度研发案例
+    ├── frontend/                   # 前端开发案例
+    │   └── micro_frontend_architecture.md # 微前端架构设计与实现
+    ├── backend/                    # 后端开发案例
+    │   ├── distributed_system.md   # 分布式系统设计与实现
+    │   └── distributed_transaction.md # 分布式事务处理系统设计与实现
+    ├── middleware/                 # 中间件案例
+    ├── database/                   # 数据库案例
+    │   └── sharding_solution.md    # 数据库分库分表方案设计与实现
+    └── algorithm/                  # 算法案例
+```
+
 ## 难度级别
 
 ### 低难度 (Easy)
@@ -18,7 +54,7 @@
 ### 前端开发
 
 #### Android
-- **低难度**：基础UI组件实现、简单列表展示、SharedPreferences数据存储
+- **低难度**：[基础UI组件实现](easy/frontend/android_ui_basic.md)、简单列表展示、SharedPreferences数据存储
 - **中难度**：自定义View组件、RecyclerView复杂适配器、MVVM架构实现
 - **高难度**：复杂动画效果、组件化架构设计、性能优化与内存泄漏处理
 
@@ -29,27 +65,27 @@
 
 #### H5/Web
 - **低难度**：响应式布局实现、基础表单验证、简单DOM操作
-- **中难度**：SPA页面状态管理、前端路由实现、复杂表单处理
-- **高难度**：前端微服务架构、大规模数据可视化、PWA离线应用实现
+- **中难度**：[React状态管理实现](medium/frontend/react_state_management.md)、前端路由实现、复杂表单处理
+- **高难度**：[微前端架构设计与实现](hard/frontend/micro_frontend_architecture.md)、大规模数据可视化、PWA离线应用实现
 
 ### 后端开发
 
 #### Java
-- **低难度**：RESTful API实现、Spring Boot基础应用、简单CRUD操作
-- **中难度**：Spring Cloud微服务组件集成、复杂业务逻辑实现、并发编程
-- **高难度**：分布式事务处理、高并发系统设计、复杂权限与认证系统
+- **低难度**：[Spring Boot RESTful API实现](easy/backend/spring_boot_rest_api.md)、简单CRUD操作
+- **中难度**：[设计模式应用](medium/backend/design_patterns.md)、[Spring Cloud微服务架构实现](medium/backend/spring_cloud_microservices.md)、并发编程
+- **高难度**：[分布式系统设计与实现](hard/backend/distributed_system.md)、[分布式事务处理](hard/backend/distributed_transaction.md)、高并发系统设计
 
 #### 中间件集成
 - **低难度**：Redis缓存集成、RabbitMQ基础消息队列、Nginx简单配置
-- **中难度**：分布式缓存策略、消息队列复杂场景应用、服务网关高级配置
+- **中难度**：[Redis分布式缓存策略实现](medium/middleware/redis_cache_strategy.md)、消息队列复杂场景应用、服务网关高级配置
 - **高难度**：中间件集群方案、消息系统高可用设计、全链路监控实现
 
 ### 数据库
 
 #### MySQL
-- **低难度**：基础SQL查询优化、索引设计、简单存储过程
+- **低难度**：[MySQL基础查询优化](easy/database/mysql_query_optimization.md)、索引设计、简单存储过程
 - **中难度**：复杂查询优化、分区表设计、主从复制配置
-- **高难度**：分库分表方案、读写分离架构、高可用集群设计
+- **高难度**：[数据库分库分表方案设计与实现](hard/database/sharding_solution.md)、读写分离架构、高可用集群设计
 
 #### ElasticSearch
 - **低难度**：基础索引创建与查询、简单聚合分析、全文检索实现
@@ -57,7 +93,7 @@
 - **高难度**：大规模数据检索优化、复杂数据建模、跨集群搜索实现
 
 ### 算法与数据结构
-- **低难度**：基础排序算法、链表操作、栈与队列实现
+- **低难度**：[数组操作基础算法](easy/algorithm/array_manipulation.md)、链表操作、栈与队列实现
 - **中难度**：树结构操作、图算法基础、动态规划入门
 - **高难度**：复杂图算法、高级动态规划、机器学习算法实现
 

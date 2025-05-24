@@ -10,11 +10,35 @@ GenDev-Benchmark/
 ├── development/                              # 研发相关案例
 │   ├── README.md                             # 研发维度说明
 │   ├── easy/                                 # 低难度研发案例
-│   │   └── array_manipulation.md             # 数组操作基础算法
+│   │   ├── frontend/                         # 前端开发案例
+│   │   │   └── android_ui_basic.md           # Android基础UI组件实现
+│   │   ├── backend/                          # 后端开发案例
+│   │   │   └── spring_boot_rest_api.md       # Spring Boot RESTful API实现
+│   │   ├── middleware/                       # 中间件案例
+│   │   ├── database/                         # 数据库案例
+│   │   │   └── mysql_query_optimization.md   # MySQL基础查询优化
+│   │   └── algorithm/                        # 算法案例
+│   │       └── array_manipulation.md         # 数组操作基础算法
 │   ├── medium/                               # 中难度研发案例
-│   │   └── design_patterns.md                # 设计模式应用
+│   │   ├── frontend/                         # 前端开发案例
+│   │   │   └── react_state_management.md     # React状态管理实现
+│   │   ├── backend/                          # 后端开发案例
+│   │   │   ├── design_patterns.md            # 设计模式应用
+│   │   │   └── spring_cloud_microservices.md # Spring Cloud微服务架构实现
+│   │   ├── middleware/                       # 中间件案例
+│   │   │   └── redis_cache_strategy.md       # Redis分布式缓存策略实现
+│   │   ├── database/                         # 数据库案例
+│   │   └── algorithm/                        # 算法案例
 │   └── hard/                                 # 高难度研发案例
-│       └── distributed_system.md             # 分布式系统设计与实现
+│       ├── frontend/                         # 前端开发案例
+│       │   └── micro_frontend_architecture.md # 微前端架构设计与实现
+│       ├── backend/                          # 后端开发案例
+│       │   ├── distributed_system.md         # 分布式系统设计与实现
+│       │   └── distributed_transaction.md    # 分布式事务处理系统设计与实现
+│       ├── middleware/                       # 中间件案例
+│       ├── database/                         # 数据库案例
+│       │   └── sharding_solution.md          # 数据库分库分表方案设计与实现
+│       └── algorithm/                        # 算法案例
 ├── operations/                               # 运维相关案例
 │   ├── README.md                             # 运维维度说明
 │   ├── easy/                                 # 低难度运维案例
@@ -41,12 +65,38 @@ GenDev-Benchmark/
 - [测试维度说明](testing/README.md)
 
 ### 研发维度案例
+
+#### 前端开发
 - **低难度**
-  - [数组操作基础算法](development/easy/array_manipulation.md)
+  - [Android基础UI组件实现](development/easy/frontend/android_ui_basic.md)
 - **中难度**
-  - [设计模式应用](development/medium/design_patterns.md)
+  - [React状态管理实现](development/medium/frontend/react_state_management.md)
 - **高难度**
-  - [分布式系统设计与实现](development/hard/distributed_system.md)
+  - [微前端架构设计与实现](development/hard/frontend/micro_frontend_architecture.md)
+
+#### 后端开发
+- **低难度**
+  - [Spring Boot RESTful API实现](development/easy/backend/spring_boot_rest_api.md)
+- **中难度**
+  - [设计模式应用](development/medium/backend/design_patterns.md)
+  - [Spring Cloud微服务架构实现](development/medium/backend/spring_cloud_microservices.md)
+- **高难度**
+  - [分布式系统设计与实现](development/hard/backend/distributed_system.md)
+  - [分布式事务处理系统设计与实现](development/hard/backend/distributed_transaction.md)
+
+#### 中间件
+- **中难度**
+  - [Redis分布式缓存策略实现](development/medium/middleware/redis_cache_strategy.md)
+
+#### 数据库
+- **低难度**
+  - [MySQL基础查询优化](development/easy/database/mysql_query_optimization.md)
+- **高难度**
+  - [数据库分库分表方案设计与实现](development/hard/database/sharding_solution.md)
+
+#### 算法
+- **低难度**
+  - [数组操作基础算法](development/easy/algorithm/array_manipulation.md)
 
 ### 运维维度案例
 - **低难度**
