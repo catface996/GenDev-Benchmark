@@ -10,7 +10,9 @@ development/
 │   ├── easy/                        # 低难度前端案例
 │   │   └── android_ui_basic.md      # Android基础UI组件实现
 │   ├── medium/                      # 中难度前端案例
-│   │   └── react_state_management.md # React状态管理实现
+│   │   ├── react_state_management.md # React状态管理实现
+│   │   ├── electron_chatbox_app.md  # Electron大模型ChatBox应用
+│   │   └── electron_s3_manager.md   # Electron AWS S3管理工具
 │   └── hard/                        # 高难度前端案例
 │       └── micro_frontend_architecture.md # 微前端架构设计与实现
 ├── backend/                         # 后端开发案例
@@ -49,7 +51,10 @@ development/
 
 #### 案例列表
 - **低难度**：[Android基础UI组件实现](frontend/easy/android_ui_basic.md)
-- **中难度**：[React状态管理实现](frontend/medium/react_state_management.md)
+- **中难度**：
+  - [React状态管理实现](frontend/medium/react_state_management.md)
+  - [Electron大模型ChatBox应用](frontend/medium/electron_chatbox_app.md)
+  - [Electron AWS S3管理工具](frontend/medium/electron_s3_manager.md)
 - **高难度**：[微前端架构设计与实现](frontend/hard/micro_frontend_architecture.md)
 
 ### 后端开发
