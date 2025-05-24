@@ -15,7 +15,8 @@ development/
 │       └── micro_frontend_architecture.md # 微前端架构设计与实现
 ├── backend/                         # 后端开发案例
 │   ├── easy/                        # 低难度后端案例
-│   │   └── spring_boot_rest_api.md  # Spring Boot RESTful API实现
+│   │   ├── spring_boot_rest_api.md  # Spring Boot RESTful API实现
+│   │   └── dev_environment_setup.md # Java开发环境搭建
 │   ├── medium/                      # 中难度后端案例
 │   │   ├── design_patterns.md       # 设计模式应用
 │   │   └── spring_cloud_microservices.md # Spring Cloud微服务架构实现
@@ -54,7 +55,9 @@ development/
 后端开发案例涵盖了从简单API实现到复杂分布式系统设计，主要基于Java技术栈。
 
 #### 案例列表
-- **低难度**：[Spring Boot RESTful API实现](backend/easy/spring_boot_rest_api.md)
+- **低难度**：
+  - [Spring Boot RESTful API实现](backend/easy/spring_boot_rest_api.md)
+  - [Java开发环境搭建](backend/easy/dev_environment_setup.md)
 - **中难度**：
   - [设计模式应用](backend/medium/design_patterns.md)
   - [Spring Cloud微服务架构实现](backend/medium/spring_cloud_microservices.md)

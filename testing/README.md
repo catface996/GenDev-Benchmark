@@ -13,6 +13,7 @@ testing/
 │   └── hard/                       # 高难度单元测试案例
 ├── integration/                    # 集成测试案例
 │   ├── easy/                       # 低难度集成测试案例
+│   │   └── test_environment_setup.md # 集成测试环境搭建
 │   ├── medium/                     # 中难度集成测试案例
 │   │   └── api_testing.md          # API测试自动化
 │   └── hard/                       # 高难度集成测试案例
@@ -43,6 +44,7 @@ testing/
 集成测试案例涵盖了组件间交互测试、API测试和服务集成测试。
 
 #### 案例列表
+- **低难度**：[集成测试环境搭建](integration/easy/test_environment_setup.md)
 - **中难度**：[API测试自动化](integration/medium/api_testing.md)
 
 ### 端到端测试

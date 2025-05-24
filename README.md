@@ -18,7 +18,8 @@ GenDev-Benchmark/
 │   │       └── micro_frontend_architecture.md # 微前端架构设计与实现
 │   ├── backend/                              # 后端开发案例
 │   │   ├── easy/                             # 低难度后端案例
-│   │   │   └── spring_boot_rest_api.md       # Spring Boot RESTful API实现
+│   │   │   ├── spring_boot_rest_api.md       # Spring Boot RESTful API实现
+│   │   │   └── dev_environment_setup.md      # Java开发环境搭建
 │   │   ├── medium/                           # 中难度后端案例
 │   │   │   ├── design_patterns.md            # 设计模式应用
 │   │   │   └── spring_cloud_microservices.md # Spring Cloud微服务架构实现
@@ -42,6 +43,8 @@ GenDev-Benchmark/
 │   │   └── easy/                             # 低难度单元测试案例
 │   │       └── unit_testing.md               # 基础单元测试编写
 │   ├── integration/                          # 集成测试案例
+│   │   ├── easy/                             # 低难度集成测试案例
+│   │   │   └── test_environment_setup.md     # 集成测试环境搭建
 │   │   └── medium/                           # 中难度集成测试案例
 │   │       └── api_testing.md                # API测试自动化
 │   └── e2e/                                  # 端到端测试案例
@@ -54,9 +57,12 @@ GenDev-Benchmark/
     │   │   └── simple_docker_deployment.md   # 简单Docker容器部署
     │   └── hard/                             # 高难度容器案例
     │       └── microservices_deployment.md   # 微服务架构部署与管理
-    └── cicd/                                 # CI/CD流水线案例
-        └── medium/                           # 中难度CI/CD案例
-            └── cicd_pipeline_setup.md        # CI/CD流水线配置
+    ├── cicd/                                 # CI/CD流水线案例
+    │   └── medium/                           # 中难度CI/CD案例
+    │       └── cicd_pipeline_setup.md        # CI/CD流水线配置
+    └── infrastructure/                       # 基础设施即代码案例
+        └── easy/                             # 低难度基础设施案例
+            └── ops_environment_setup.md      # 运维基础环境搭建
 ```
 
 ## 文档导航
@@ -74,7 +80,9 @@ GenDev-Benchmark/
 - **高难度**：[微前端架构设计与实现](development/frontend/hard/micro_frontend_architecture.md)
 
 #### 后端开发
-- **低难度**：[Spring Boot RESTful API实现](development/backend/easy/spring_boot_rest_api.md)
+- **低难度**：
+  - [Spring Boot RESTful API实现](development/backend/easy/spring_boot_rest_api.md)
+  - [Java开发环境搭建](development/backend/easy/dev_environment_setup.md)
 - **中难度**：
   - [设计模式应用](development/backend/medium/design_patterns.md)
   - [Spring Cloud微服务架构实现](development/backend/medium/spring_cloud_microservices.md)
@@ -98,6 +106,7 @@ GenDev-Benchmark/
 - **低难度**：[基础单元测试编写](testing/unit/easy/unit_testing.md)
 
 #### 集成测试
+- **低难度**：[集成测试环境搭建](testing/integration/easy/test_environment_setup.md)
 - **中难度**：[API测试自动化](testing/integration/medium/api_testing.md)
 
 #### 端到端测试
@@ -111,6 +120,9 @@ GenDev-Benchmark/
 
 #### CI/CD流水线
 - **中难度**：[CI/CD流水线配置](operations/cicd/medium/cicd_pipeline_setup.md)
+
+#### 基础设施
+- **低难度**：[运维基础环境搭建](operations/infrastructure/easy/ops_environment_setup.md)
 
 ## 项目概述
 

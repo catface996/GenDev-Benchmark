@@ -23,6 +23,7 @@ operations/
 │   └── hard/                        # 高难度监控案例
 ├── infrastructure/                  # 基础设施即代码案例
 │   ├── easy/                        # 低难度基础设施案例
+│   │   └── ops_environment_setup.md # 运维基础环境搭建
 │   ├── medium/                      # 中难度基础设施案例
 │   └── hard/                        # 高难度基础设施案例
 └── security/                        # 安全运维案例
@@ -51,6 +52,9 @@ CI/CD流水线案例涵盖了持续集成、持续部署和自动化测试流程
 
 ### 基础设施即代码
 基础设施即代码案例涵盖了使用Terraform、CloudFormation等工具进行基础设施自动化管理。
+
+#### 案例列表
+- **低难度**：[运维基础环境搭建](infrastructure/easy/ops_environment_setup.md)
 
 ### 安全运维
 安全运维案例涵盖了安全配置、漏洞管理、合规性检查和安全自动化。
