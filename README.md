@@ -43,6 +43,10 @@ GenDev-Benchmark/
 │   │   ├── easy/                             # 低难度性能测试案例
 │   │   ├── medium/                           # 中难度性能测试案例
 │   │   └── hard/                             # 高难度性能测试案例
+│   ├── security/                             # 安全测试案例
+│   │   ├── easy/                             # 低难度安全测试案例
+│   │   ├── medium/                           # 中难度安全测试案例
+│   │   └── hard/                             # 高难度安全测试案例
 │   └── unit/                                 # 单元测试案例
 │       ├── easy/                             # 低难度单元测试案例
 │       ├── medium/                           # 中难度单元测试案例
@@ -78,80 +82,209 @@ GenDev-Benchmark/
 - [测试维度说明](testing/README.md)
 - [运维维度说明](operations/README.md)
 
-### 运维维度案例
+### 测试维度案例
 
-#### 容器化技术
+#### 单元测试
 - **低难度**：
-  - [简单Docker容器部署](operations/container/easy/simple_docker_deployment.md)
-  - [Docker Compose基础应用部署](operations/container/easy/docker_compose_basics.md)
-  - [Docker数据卷管理与备份](operations/container/easy/docker_volume_management.md)
-  - [Docker网络基础配置](operations/container/easy/docker_networking_basics.md)
-  - [容器镜像仓库搭建与配置](operations/container/easy/container_registry_setup.md)
+  - [基础单元测试编写](testing/unit/easy/unit_testing.md)
+  - [函数单元测试](testing/unit/easy/function_unit_testing.md)
+  - [类单元测试](testing/unit/easy/class_unit_testing.md)
+  - [参数化测试](testing/unit/easy/parameterized_testing.md)
+  - [模拟对象测试](testing/unit/easy/mock_object_testing.md)
+  - [异常测试](testing/unit/easy/exception_testing.md)
+  - [测试驱动开发](testing/unit/easy/test_driven_development.md)
+  - [代码覆盖率测试](testing/unit/easy/code_coverage_testing.md)
+  - [断言测试](testing/unit/easy/assertion_testing.md)
+  - [测试夹具设置](testing/unit/easy/test_fixture_setup.md)
+  - [边界值测试](testing/unit/easy/boundary_value_testing.md)
+  - [测试组织与管理](testing/unit/easy/test_organization.md)
 - **中难度**：
-  - [Kubernetes基础部署与配置](operations/container/medium/kubernetes_deployment.md)
-  - [Docker Swarm集群编排与管理](operations/container/medium/docker_swarm_orchestration.md)
-  - [容器安全实现与最佳实践](operations/container/medium/container_security_implementation.md)
+  - [集成单元测试](testing/unit/medium/integration_unit_testing.md)
+  - [行为驱动开发](testing/unit/medium/behavior_driven_development.md)
+  - [基于属性的测试](testing/unit/medium/property_based_testing.md)
+  - [变异测试](testing/unit/medium/mutation_testing.md)
+  - [并发代码测试](testing/unit/medium/concurrent_code_testing.md)
+  - [复杂对象测试](testing/unit/medium/complex_object_testing.md)
+  - [数据库单元测试](testing/unit/medium/database_unit_testing.md)
+  - [遗留代码测试](testing/unit/medium/legacy_code_testing.md)
+  - [依赖注入测试](testing/unit/medium/dependency_injection_testing.md)
+  - [API契约测试](testing/unit/medium/api_contract_testing.md)
+  - [事件驱动架构测试](testing/unit/medium/event_driven_testing.md)
 - **高难度**：
-  - [微服务架构部署与管理](operations/container/hard/microservices_deployment.md)
-  - [Kubernetes Operator开发与部署](operations/container/hard/kubernetes_operator_development.md)
-  - [服务网格架构实现与管理](operations/container/hard/service_mesh_implementation.md)
+  - [性能单元测试框架](testing/unit/hard/performance_unit_testing.md)
+  - [内存泄漏测试框架](testing/unit/hard/memory_leak_testing_framework.md)
+  - [复杂算法测试框架](testing/unit/hard/complex_algorithm_testing.md)
+  - [自动测试生成框架](testing/unit/hard/test_generation_framework.md)
+  - [蜕变测试框架](testing/unit/hard/metamorphic_testing_framework.md)
+  - [符号执行测试框架](testing/unit/hard/symbolic_execution_testing.md)
+  - [模糊测试框架](testing/unit/hard/fuzz_testing_framework.md)
+  - [具符结合测试框架](testing/unit/hard/concolic_testing_framework.md)
+  - [基于模型的测试框架](testing/unit/hard/model_based_testing_framework.md)
+  - [组合测试框架](testing/unit/hard/combinatorial_testing_framework.md)
+  - [契约验证测试框架](testing/unit/hard/contract_verification_framework.md)
+  - [量子算法测试框架](testing/unit/hard/quantum_algorithm_testing.md)
 
-#### CI/CD流水线
+#### 集成测试
 - **低难度**：
-  - [GitHub Actions基础配置](operations/cicd/easy/github_actions_basic.md)
-  - [Jenkins基础配置与使用](operations/cicd/easy/jenkins_basic_setup.md)
+  - [集成测试环境搭建](testing/integration/easy/test_environment_setup.md)
+  - [API契约测试](testing/integration/easy/api_contract_testing.md)
+  - [认证测试](testing/integration/easy/authentication_testing.md)
+  - [缓存集成测试](testing/integration/easy/cache_integration.md)
+  - [配置测试](testing/integration/easy/configuration_testing.md)
+  - [数据库集成测试](testing/integration/easy/database_integration.md)
+  - [邮件服务测试](testing/integration/easy/email_service_testing.md)
+  - [外部API测试](testing/integration/easy/external_api_testing.md)
+  - [文件系统集成测试](testing/integration/easy/file_system_integration.md)
+  - [日志集成测试](testing/integration/easy/logging_integration.md)
+  - [消息队列测试](testing/integration/easy/message_queue_testing.md)
+  - [定时任务测试](testing/integration/easy/scheduled_tasks_testing.md)
 - **中难度**：
-  - [CI/CD流水线配置](operations/cicd/medium/cicd_pipeline_setup.md)
-  - [持续部署流水线实现](operations/cicd/medium/continuous_deployment_pipeline.md)
-  - [制品管理系统配置与使用](operations/cicd/medium/artifact_management_system.md)
+  - [API测试自动化](testing/integration/medium/api_testing.md)
+  - [API网关测试](testing/integration/medium/api_gateway_testing.md)
+  - [缓存策略测试](testing/integration/medium/caching_strategy_testing.md)
+  - [云服务集成测试](testing/integration/medium/cloud_service_integration.md)
+  - [数据管道测试](testing/integration/medium/data_pipeline_testing.md)
+  - [数据库迁移测试](testing/integration/medium/database_migration_testing.md)
+  - [分布式事务测试](testing/integration/medium/distributed_transaction.md)
+  - [事件驱动测试](testing/integration/medium/event_driven_testing.md)
+  - [微服务集成测试](testing/integration/medium/microservice_integration.md)
+  - [安全集成测试](testing/integration/medium/security_integration.md)
+  - [第三方集成测试](testing/integration/medium/third_party_integration.md)
 - **高难度**：
-  - [多环境CI/CD流水线设计与实现](operations/cicd/hard/multi_environment_pipeline.md)
+  - [API测试框架](testing/integration/hard/api_testing_framework.md)
+  - [区块链测试平台](testing/integration/hard/blockchain_testing_platform.md)
+  - [持续集成平台](testing/integration/hard/continuous_integration_platform.md)
+  - [数据库测试平台](testing/integration/hard/database_testing_platform.md)
+  - [分布式系统测试](testing/integration/hard/distributed_system_testing.md)
+  - [事件溯源测试](testing/integration/hard/event_sourcing_testing.md)
+  - [IoT测试框架](testing/integration/hard/iot_testing_framework.md)
+  - [机器学习管道测试](testing/integration/hard/ml_pipeline_testing.md)
+  - [实时系统测试](testing/integration/hard/real_time_system_testing.md)
+  - [无服务器测试平台](testing/integration/hard/serverless_testing_platform.md)
+  - [服务网格测试](testing/integration/hard/service_mesh_testing.md)
 
-#### 基础设施即代码
+#### 端到端测试
 - **低难度**：
-  - [运维基础环境搭建](operations/infrastructure/easy/ops_environment_setup.md)
-  - [Ansible基础自动化配置](operations/infrastructure/easy/ansible_automation.md)
-  - [Vagrant开发环境自动化配置](operations/infrastructure/easy/vagrant_dev_environment.md)
-  - [云存储服务配置与管理](operations/infrastructure/easy/cloud_storage_management.md)
+  - [API工作流测试](testing/e2e/easy/api_workflow_testing.md)
+  - [数据库工作流测试](testing/e2e/easy/database_workflow_testing.md)
+  - [文件上传测试](testing/e2e/easy/file_upload_testing.md)
+  - [移动应用测试](testing/e2e/easy/mobile_app_testing.md)
+  - [通知系统测试](testing/e2e/easy/notification_system_testing.md)
+  - [支付处理测试](testing/e2e/easy/payment_processing_testing.md)
+  - [搜索功能测试](testing/e2e/easy/search_functionality_testing.md)
+  - [购物车测试](testing/e2e/easy/shopping_cart_testing.md)
+  - [用户资料测试](testing/e2e/easy/user_profile_testing.md)
+  - [用户注册测试](testing/e2e/easy/user_registration_testing.md)
+  - [Web UI测试](testing/e2e/easy/web_ui_testing.md)
 - **中难度**：
-  - [Terraform AWS基础设施自动化](operations/infrastructure/medium/terraform_aws_infrastructure.md)
-  - [配置管理系统实现](operations/infrastructure/medium/configuration_management.md)
-  - [灾难恢复方案设计与实施](operations/infrastructure/medium/disaster_recovery_planning.md)
+  - [无障碍测试](testing/e2e/medium/accessibility_testing.md)
+  - [跨浏览器测试](testing/e2e/medium/cross_browser_testing.md)
+  - [数据驱动测试](testing/e2e/medium/data_driven_testing.md)
+  - [国际化测试](testing/e2e/medium/internationalization_testing.md)
+  - [多设备测试](testing/e2e/medium/multi_device_testing.md)
+  - [多租户测试](testing/e2e/medium/multi_tenant_testing.md)
+  - [离线模式测试](testing/e2e/medium/offline_mode_testing.md)
+  - [实时应用测试](testing/e2e/medium/real_time_application_testing.md)
+  - [安全工作流测试](testing/e2e/medium/security_workflow_testing.md)
+  - [视觉回归测试](testing/e2e/medium/visual_regression_testing.md)
+  - [工作流自动化测试](testing/e2e/medium/workflow_automation_testing.md)
 - **高难度**：
-  - [多云环境基础设施设计与实现](operations/infrastructure/hard/multi_cloud_infrastructure.md)
+  - [端到端测试框架设计与实现](testing/e2e/hard/e2e_testing_framework.md)
+  - [AI系统测试框架](testing/e2e/hard/ai_system_testing_framework.md)
+  - [AR/VR测试框架](testing/e2e/hard/ar_vr_testing_framework.md)
+  - [自主系统测试平台](testing/e2e/hard/autonomous_system_testing_platform.md)
+  - [区块链DApp测试框架](testing/e2e/hard/blockchain_dapp_testing_framework.md)
+  - [云原生测试平台](testing/e2e/hard/cloud_native_testing_platform.md)
+  - [数字孪生测试平台](testing/e2e/hard/digital_twin_testing_platform.md)
+  - [分布式系统端到端框架](testing/e2e/hard/distributed_system_e2e_framework.md)
+  - [金融科技系统测试平台](testing/e2e/hard/fintech_system_testing_platform.md)
+  - [IoT平台测试框架](testing/e2e/hard/iot_platform_testing_framework.md)
+  - [微服务测试平台](testing/e2e/hard/microservices_testing_platform.md)
+  - [SaaS平台测试框架](testing/e2e/hard/saas_platform_testing_framework.md)
 
-#### 监控和日志
+#### 性能测试
 - **低难度**：
-  - [Prometheus和Grafana基础监控配置](operations/monitoring/easy/prometheus_grafana_setup.md)
-  - [系统监控基础配置](operations/monitoring/easy/system_monitoring_basics.md)
-  - [日志轮转与管理配置](operations/monitoring/easy/log_rotation_setup.md)
+  - [负载测试基础](testing/performance/easy/load_testing_basics.md)
+  - [压力测试基础](testing/performance/easy/stress_testing_basics.md)
+  - [API性能测试](testing/performance/easy/api_performance_testing.md)
+  - [数据库性能测试](testing/performance/easy/database_performance_testing.md)
+  - [Web页面性能测试](testing/performance/easy/web_page_performance_testing.md)
+  - [内存使用测试](testing/performance/easy/memory_usage_testing.md)
+  - [响应时间测试](testing/performance/easy/response_time_testing.md)
+  - [吞吐量测试](testing/performance/easy/throughput_testing.md)
+  - [资源利用率测试](testing/performance/easy/resource_utilization_testing.md)
+  - [可扩展性测试](testing/performance/easy/scalability_testing.md)
+  - [基准性能测试](testing/performance/easy/baseline_performance_testing.md)
 - **中难度**：
-  - [ELK Stack日志分析系统实现](operations/monitoring/medium/elk_stack_implementation.md)
-  - [指标可视化仪表板设计](operations/monitoring/medium/metrics_visualization_dashboard.md)
-  - [告警系统设计与实现](operations/monitoring/medium/alerting_system_implementation.md)
+  - [分布式负载测试](testing/performance/medium/distributed_load_testing.md)
+  - [性能剖析与分析](testing/performance/medium/performance_profiling.md)
+  - [数据库优化测试](testing/performance/medium/database_optimization_testing.md)
+  - [缓存策略测试](testing/performance/medium/caching_strategy_testing.md)
+  - [微服务性能测试](testing/performance/medium/microservices_performance_testing.md)
+  - [前端性能测试](testing/performance/medium/frontend_performance_testing.md)
+  - [API网关性能测试](testing/performance/medium/api_gateway_performance_testing.md)
+  - [消息队列性能测试](testing/performance/medium/message_queue_performance_testing.md)
+  - [容器性能测试](testing/performance/medium/container_performance_testing.md)
+  - [无服务器性能测试](testing/performance/medium/serverless_performance_testing.md)
+  - [移动应用性能测试](testing/performance/medium/mobile_app_performance_testing.md)
 - **高难度**：
-  - [分布式追踪与可观测性平台设计](operations/monitoring/hard/distributed_tracing_platform.md)
+  - [性能测试框架设计与实现](testing/performance/hard/performance_testing_framework.md)
+  - [分布式系统性能建模](testing/performance/hard/distributed_system_performance_modeling.md)
+  - [混沌工程平台](testing/performance/hard/chaos_engineering_platform.md)
+  - [实时性能监控系统](testing/performance/hard/real_time_performance_monitoring.md)
+  - [数据库基准测试框架](testing/performance/hard/database_benchmark_framework.md)
+  - [云成本性能优化系统](testing/performance/hard/cloud_cost_performance_optimization.md)
+  - [AI模型性能优化框架](testing/performance/hard/ai_model_performance_optimization.md)
+  - [流数据处理系统基准测试](testing/performance/hard/streaming_data_processing_benchmark.md)
+  - [分布式追踪分析平台](testing/performance/hard/distributed_tracing_analysis_platform.md)
+  - [游戏引擎性能测试框架](testing/performance/hard/game_engine_performance_framework.md)
+  - [Web前端性能实验室](testing/performance/hard/web_frontend_performance_lab.md)
 
-#### 安全运维
+#### 安全测试
 - **低难度**：
-  - [服务器安全加固配置](operations/security/easy/security_hardening.md)
-  - [防火墙规则配置与管理](operations/security/easy/firewall_configuration.md)
-  - [SSL证书管理与自动更新](operations/security/easy/ssl_certificate_management.md)
-  - [用户访问管理与权限控制](operations/security/easy/user_access_management.md)
+  - [输入验证测试](testing/security/easy/input_validation_testing.md)
+  - [认证机制测试](testing/security/easy/authentication_testing.md)
+  - [会话管理测试](testing/security/easy/session_management_testing.md)
+  - [访问控制测试](testing/security/easy/access_control_testing.md)
+  - [CSRF防护测试](testing/security/easy/csrf_testing.md)
+  - [XSS漏洞测试](testing/security/easy/xss_testing.md)
+  - [SQL注入测试](testing/security/easy/sql_injection_testing.md)
+  - [安全配置测试](testing/security/easy/secure_configuration_testing.md)
+  - [数据保护测试](testing/security/easy/data_protection_testing.md)
+  - [错误处理安全测试](testing/security/easy/error_handling_testing.md)
+  - [文件上传安全测试](testing/security/easy/file_upload_testing.md)
 - **中难度**：
-  - [DevSecOps流水线实现](operations/security/medium/devsecops_pipeline.md)
-  - [漏洞管理系统实现](operations/security/medium/vulnerability_management_system.md)
-  - [安全监控系统设计与实现](operations/security/medium/security_monitoring_system.md)
+  - [API安全测试](testing/security/medium/api_security_testing.md)
+  - [OAuth安全测试](testing/security/medium/oauth_security_testing.md)
+  - [JWT安全测试](testing/security/medium/jwt_security_testing.md)
+  - [安全代码审查](testing/security/medium/secure_code_review.md)
+  - [移动应用安全测试](testing/security/medium/mobile_app_security_testing.md)
+  - [容器安全测试](testing/security/medium/container_security_testing.md)
+  - [云安全测试](testing/security/medium/cloud_security_testing.md)
+  - [DevSecOps实现测试](testing/security/medium/devsecops_implementation.md)
+  - [微服务安全测试](testing/security/medium/microservices_security_testing.md)
+  - [威胁建模测试](testing/security/medium/threat_modeling.md)
+  - [安全开发生命周期测试](testing/security/medium/secure_sdlc_testing.md)
 - **高难度**：
-  - [零信任安全架构设计与实现](operations/security/hard/zero_trust_architecture.md)
+  - [渗透测试框架](testing/security/hard/penetration_testing_framework.md)
+  - [安全扫描平台](testing/security/hard/security_scanning_platform.md)
+  - [威胁情报平台](testing/security/hard/threat_intelligence_platform.md)
+  - [安全编排自动化响应平台](testing/security/hard/security_orchestration_platform.md)
+  - [欺骗技术防御平台](testing/security/hard/deception_technology_platform.md)
+  - [红队自动化平台](testing/security/hard/red_team_automation_platform.md)
+  - [安全合规性测试平台](testing/security/hard/security_compliance_platform.md)
+  - [安全混沌工程平台](testing/security/hard/security_chaos_engineering.md)
+  - [零信任架构评估平台](testing/security/hard/zero_trust_assessment_platform.md)
+  - [API安全测试平台](testing/security/hard/api_security_testing_platform.md)
+  - [供应链安全测试平台](testing/security/hard/supply_chain_security_platform.md)
 
 ## 项目概述
 
 GenDev-Benchmark项目旨在提供一套全面的基准测试案例，用于评估AI代码生成工具在不同场景下的性能和能力。项目从三个维度组织案例：
 
 1. **研发维度**：评估AI工具在前端、后端、中间件、数据库和算法等领域的代码生成能力
-2. **测试维度**：评估AI工具在单元测试、集成测试、端到端测试等领域的测试代码生成能力
-3. **运维维度**：评估AI工具在容器化、CI/CD、监控等DevOps领域的配置和脚本生成能力
+2. **测试维度**：评估AI工具在单元测试、集成测试、端到端测试、性能测试和安全测试等领域的测试代码生成能力
+3. **运维维度**：评估AI工具在容器化、CI/CD、基础设施、监控和安全运维等DevOps领域的配置和脚本生成能力
 
 每个维度下，案例按照技术领域和难度级别（低、中、高）进行分类，帮助用户全面评估不同AI工具的能力。
 
