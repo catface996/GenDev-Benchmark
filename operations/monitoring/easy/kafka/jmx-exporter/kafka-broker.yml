@@ -1,0 +1,130 @@
+rules:
+  # Kafka Broker基础指标
+  - pattern: kafka.server<type=(.+), name=(.+)><>Value
+    name: kafka_server_$1_$2
+    type: GAUGE
+
+  # 网络请求指标
+  - pattern: kafka.network<type=RequestMetrics, name=(.+), request=(.+)><>Count
+    name: kafka_network_request_$1_total
+    labels:
+      request: "$2"
+    type: COUNTER
+
+  - pattern: kafka.network<type=RequestMetrics, name=(.+), request=(.+)><>Mean
+    name: kafka_network_request_$1_mean
+    labels:
+      request: "$2"
+    type: GAUGE
+
+  # 网络连接数
+  - pattern: kafka.server<type=socket-server-metrics, listener=(.+), networkProcessor=(.+)><>connection-count
+    name: kafka_server_connection_count
+    labels:
+      listener: "$1"
+      processor: "$2"
+    type: GAUGE
+
+  # IO指标
+  - pattern: kafka.server<type=BrokerTopicMetrics, name=(.+)><>Count
+    name: kafka_server_broker_topic_$1_total
+    type: COUNTER
+
+  - pattern: kafka.server<type=BrokerTopicMetrics, name=(.+), topic=(.+)><>Count
+    name: kafka_server_broker_topic_$1_total
+    labels:
+      topic: "$2"
+    type: COUNTER
+
+  # 字节输入输出
+  - pattern: kafka.server<type=BrokerTopicMetrics, name=BytesInPerSec><>Count
+    name: kafka_server_bytes_in_total
+    type: COUNTER
+
+  - pattern: kafka.server<type=BrokerTopicMetrics, name=BytesOutPerSec><>Count
+    name: kafka_server_bytes_out_total
+    type: COUNTER
+
+  - pattern: kafka.server<type=BrokerTopicMetrics, name=BytesInPerSec, topic=(.+)><>Count
+    name: kafka_server_bytes_in_total
+    labels:
+      topic: "$1"
+    type: COUNTER
+
+  - pattern: kafka.server<type=BrokerTopicMetrics, name=BytesOutPerSec, topic=(.+)><>Count
+    name: kafka_server_bytes_out_total
+    labels:
+      topic: "$1"
+    type: COUNTER
+
+  # 消息数量
+  - pattern: kafka.server<type=BrokerTopicMetrics, name=MessagesInPerSec><>Count
+    name: kafka_server_messages_in_total
+    type: COUNTER
+
+  - pattern: kafka.server<type=BrokerTopicMetrics, name=MessagesInPerSec, topic=(.+)><>Count
+    name: kafka_server_messages_in_total
+    labels:
+      topic: "$1"
+    type: COUNTER
+
+  # 请求处理时间
+  - pattern: kafka.network<type=RequestMetrics, name=TotalTimeMs, request=(.+)><>Mean
+    name: kafka_network_request_total_time_ms_mean
+    labels:
+      request: "$1"
+    type: GAUGE
+
+  - pattern: kafka.network<type=RequestMetrics, name=TotalTimeMs, request=(.+)><>99thPercentile
+    name: kafka_network_request_total_time_ms_99p
+    labels:
+      request: "$1"
+    type: GAUGE
+
+  # 日志大小
+  - pattern: kafka.log<type=LogSize, name=Size, topic=(.+), partition=(.+)><>Value
+    name: kafka_log_size_bytes
+    labels:
+      topic: "$1"
+      partition: "$2"
+    type: GAUGE
+
+  # 副本管理
+  - pattern: kafka.server<type=ReplicaManager, name=(.+)><>Value
+    name: kafka_server_replica_manager_$1
+    type: GAUGE
+
+  # 控制器指标
+  - pattern: kafka.controller<type=KafkaController, name=(.+)><>Value
+    name: kafka_controller_$1
+    type: GAUGE
+
+  # JVM指标
+  - pattern: java.lang<type=Memory><HeapMemoryUsage>used
+    name: jvm_memory_heap_used_bytes
+    type: GAUGE
+
+  - pattern: java.lang<type=Memory><NonHeapMemoryUsage>used
+    name: jvm_memory_nonheap_used_bytes
+    type: GAUGE
+
+  - pattern: java.lang<type=GarbageCollector, name=(.+)><>CollectionCount
+    name: jvm_gc_collection_count_total
+    labels:
+      gc: "$1"
+    type: COUNTER
+
+  - pattern: java.lang<type=GarbageCollector, name=(.+)><>CollectionTime
+    name: jvm_gc_collection_time_ms_total
+    labels:
+      gc: "$1"
+    type: COUNTER
+
+  # 线程指标
+  - pattern: java.lang<type=Threading><>ThreadCount
+    name: jvm_threads_current
+    type: GAUGE
+
+  - pattern: java.lang<type=Threading><>DaemonThreadCount
+    name: jvm_threads_daemon
+    type: GAUGE

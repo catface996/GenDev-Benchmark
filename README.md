@@ -82,6 +82,85 @@ GenDev-Benchmark/
 - [测试维度说明](testing/README.md)
 - [运维维度说明](operations/README.md)
 
+### 研发维度案例
+
+#### 前端开发
+- **低难度**：
+  - [Android基础UI组件实现](development/frontend/easy/android_ui_basic.md)
+  - [HTML/CSS响应式布局实现](development/frontend/easy/responsive_layout.md)
+  - [Vue.js待办事项应用](development/frontend/easy/vue_todo_app.md)
+  - [iOS列表视图实现](development/frontend/easy/ios_list_view.md)
+  - [JavaScript表单验证](development/frontend/easy/javascript_form_validation.md)
+  - [CSS动画效果实现](development/frontend/easy/css_animation.md)
+  - [React基础组件库开发](development/frontend/easy/react_component_library.md)
+  - [Flutter UI组件实现](development/frontend/easy/flutter_ui_widgets.md)
+  - [HTML5 Canvas绘图应用](development/frontend/easy/html5_canvas_drawing.md)
+  - [静态博客网站模板](development/frontend/easy/static_blog_template.md)
+  - [SVG图标动画实现](development/frontend/easy/svg_icon_animation.md)
+- **中难度**：
+  - [React状态管理实现](development/frontend/medium/react_state_management.md)
+  - [Electron大模型ChatBox应用](development/frontend/medium/electron_chatbox_app.md)
+  - [Electron AWS S3管理工具](development/frontend/medium/electron_s3_manager.md)
+  - [React Hooks高级应用](development/frontend/medium/react_hooks_advanced.md)
+  - [Vue.js电商前端实现](development/frontend/medium/vue_ecommerce.md)
+  - [Flutter状态管理实现](development/frontend/medium/flutter_state_management.md)
+  - [TypeScript设计模式实现](development/frontend/medium/typescript_design_patterns.md)
+  - [渐进式Web应用(PWA)实现](development/frontend/medium/progressive_web_app.md)
+  - [Angular数据仪表盘实现](development/frontend/medium/angular_dashboard.md)
+  - [React Native社交应用](development/frontend/medium/react_native_social_app.md)
+  - [Web动画库开发](development/frontend/medium/web_animation_library.md)
+  - [WebGL 3D模型查看器](development/frontend/medium/webgl_3d_viewer.md)
+  - [Svelte实时协作应用](development/frontend/medium/svelte_realtime_app.md)
+- **高难度**：
+  - [微前端架构设计与实现](development/frontend/hard/micro_frontend_architecture.md)
+  - [React应用性能优化](development/frontend/hard/react_performance_optimization.md)
+  - [WebAssembly图像处理应用](development/frontend/hard/webassembly_image_processing.md)
+  - [GraphQL客户端框架实现](development/frontend/hard/graphql_client_framework.md)
+  - [虚拟DOM实现与渲染引擎](development/frontend/hard/virtual_dom_implementation.md)
+  - [Web 3D游戏引擎开发](development/frontend/hard/web_3d_game_engine.md)
+  - [跨平台设计系统实现](development/frontend/hard/cross_platform_design_system.md)
+  - [Web编译器/解释器实现](development/frontend/hard/web_compiler_interpreter.md)
+  - [离线优先PWA应用框架](development/frontend/hard/offline_first_pwa.md)
+  - [Web无障碍性框架开发](development/frontend/hard/web_accessibility_framework.md)
+  - [实时协作引擎实现](development/frontend/hard/realtime_collaboration_engine.md)
+
+#### 后端开发
+- **低难度**：
+  - [Spring Boot RESTful API实现](development/backend/easy/spring_boot_rest_api.md)
+  - [Java开发环境搭建](development/backend/easy/dev_environment_setup.md)
+  - [Node.js RESTful API实现](development/backend/easy/node_rest_api.md)
+  - [Python Flask Web应用](development/backend/easy/python_flask_web.md)
+  - [Go语言HTTP服务器](development/backend/easy/go_http_server.md)
+  - [Java Servlet Web应用](development/backend/easy/java_servlet_app.md)
+  - [C# ASP.NET MVC应用](development/backend/easy/csharp_aspnet_mvc.md)
+  - [PHP Laravel CRUD应用](development/backend/easy/php_laravel_crud.md)
+  - [Ruby on Rails博客应用](development/backend/easy/ruby_rails_blog.md)
+  - [Python FastAPI服务](development/backend/easy/python_fastapi.md)
+  - [Rust Actix Web API](development/backend/easy/rust_actix_api.md)
+  - [Kotlin Spring Boot应用](development/backend/easy/kotlin_spring_boot.md)
+- **中难度**：
+  - [设计模式应用](development/backend/medium/design_patterns.md)
+  - [Spring Cloud微服务架构实现](development/backend/medium/spring_cloud_microservices.md)
+  - [Node.js GraphQL API实现](development/backend/medium/node_graphql_api.md)
+- **高难度**：
+  - [分布式系统设计与实现](development/backend/hard/distributed_system.md)
+  - [分布式事务处理系统设计与实现](development/backend/hard/distributed_transaction.md)
+  - [基于SkipList实现MySQL存储引擎](development/backend/hard/skiplist_storage_engine.md)
+
+#### 中间件
+- **中难度**：
+  - [Redis分布式缓存策略实现](development/middleware/medium/redis_cache_strategy.md)
+
+#### 数据库
+- **低难度**：
+  - [MySQL基础查询优化](development/database/easy/mysql_query_optimization.md)
+- **高难度**：
+  - [数据库分库分表方案设计与实现](development/database/hard/sharding_solution.md)
+
+#### 算法与数据结构
+- **低难度**：
+  - [数组操作基础算法](development/algorithm/easy/array_manipulation.md)
+
 ### 测试维度案例
 
 #### 单元测试
@@ -201,120 +280,3 @@ GenDev-Benchmark/
   - [IoT平台测试框架](testing/e2e/hard/iot_platform_testing_framework.md)
   - [微服务测试平台](testing/e2e/hard/microservices_testing_platform.md)
   - [SaaS平台测试框架](testing/e2e/hard/saas_platform_testing_framework.md)
-
-#### 性能测试
-- **低难度**：
-  - [负载测试基础](testing/performance/easy/load_testing_basics.md)
-  - [压力测试基础](testing/performance/easy/stress_testing_basics.md)
-  - [API性能测试](testing/performance/easy/api_performance_testing.md)
-  - [数据库性能测试](testing/performance/easy/database_performance_testing.md)
-  - [Web页面性能测试](testing/performance/easy/web_page_performance_testing.md)
-  - [内存使用测试](testing/performance/easy/memory_usage_testing.md)
-  - [响应时间测试](testing/performance/easy/response_time_testing.md)
-  - [吞吐量测试](testing/performance/easy/throughput_testing.md)
-  - [资源利用率测试](testing/performance/easy/resource_utilization_testing.md)
-  - [可扩展性测试](testing/performance/easy/scalability_testing.md)
-  - [基准性能测试](testing/performance/easy/baseline_performance_testing.md)
-- **中难度**：
-  - [分布式负载测试](testing/performance/medium/distributed_load_testing.md)
-  - [性能剖析与分析](testing/performance/medium/performance_profiling.md)
-  - [数据库优化测试](testing/performance/medium/database_optimization_testing.md)
-  - [缓存策略测试](testing/performance/medium/caching_strategy_testing.md)
-  - [微服务性能测试](testing/performance/medium/microservices_performance_testing.md)
-  - [前端性能测试](testing/performance/medium/frontend_performance_testing.md)
-  - [API网关性能测试](testing/performance/medium/api_gateway_performance_testing.md)
-  - [消息队列性能测试](testing/performance/medium/message_queue_performance_testing.md)
-  - [容器性能测试](testing/performance/medium/container_performance_testing.md)
-  - [无服务器性能测试](testing/performance/medium/serverless_performance_testing.md)
-  - [移动应用性能测试](testing/performance/medium/mobile_app_performance_testing.md)
-- **高难度**：
-  - [性能测试框架设计与实现](testing/performance/hard/performance_testing_framework.md)
-  - [分布式系统性能建模](testing/performance/hard/distributed_system_performance_modeling.md)
-  - [混沌工程平台](testing/performance/hard/chaos_engineering_platform.md)
-  - [实时性能监控系统](testing/performance/hard/real_time_performance_monitoring.md)
-  - [数据库基准测试框架](testing/performance/hard/database_benchmark_framework.md)
-  - [云成本性能优化系统](testing/performance/hard/cloud_cost_performance_optimization.md)
-  - [AI模型性能优化框架](testing/performance/hard/ai_model_performance_optimization.md)
-  - [流数据处理系统基准测试](testing/performance/hard/streaming_data_processing_benchmark.md)
-  - [分布式追踪分析平台](testing/performance/hard/distributed_tracing_analysis_platform.md)
-  - [游戏引擎性能测试框架](testing/performance/hard/game_engine_performance_framework.md)
-  - [Web前端性能实验室](testing/performance/hard/web_frontend_performance_lab.md)
-
-#### 安全测试
-- **低难度**：
-  - [输入验证测试](testing/security/easy/input_validation_testing.md)
-  - [认证机制测试](testing/security/easy/authentication_testing.md)
-  - [会话管理测试](testing/security/easy/session_management_testing.md)
-  - [访问控制测试](testing/security/easy/access_control_testing.md)
-  - [CSRF防护测试](testing/security/easy/csrf_testing.md)
-  - [XSS漏洞测试](testing/security/easy/xss_testing.md)
-  - [SQL注入测试](testing/security/easy/sql_injection_testing.md)
-  - [安全配置测试](testing/security/easy/secure_configuration_testing.md)
-  - [数据保护测试](testing/security/easy/data_protection_testing.md)
-  - [错误处理安全测试](testing/security/easy/error_handling_testing.md)
-  - [文件上传安全测试](testing/security/easy/file_upload_testing.md)
-- **中难度**：
-  - [API安全测试](testing/security/medium/api_security_testing.md)
-  - [OAuth安全测试](testing/security/medium/oauth_security_testing.md)
-  - [JWT安全测试](testing/security/medium/jwt_security_testing.md)
-  - [安全代码审查](testing/security/medium/secure_code_review.md)
-  - [移动应用安全测试](testing/security/medium/mobile_app_security_testing.md)
-  - [容器安全测试](testing/security/medium/container_security_testing.md)
-  - [云安全测试](testing/security/medium/cloud_security_testing.md)
-  - [DevSecOps实现测试](testing/security/medium/devsecops_implementation.md)
-  - [微服务安全测试](testing/security/medium/microservices_security_testing.md)
-  - [威胁建模测试](testing/security/medium/threat_modeling.md)
-  - [安全开发生命周期测试](testing/security/medium/secure_sdlc_testing.md)
-- **高难度**：
-  - [渗透测试框架](testing/security/hard/penetration_testing_framework.md)
-  - [安全扫描平台](testing/security/hard/security_scanning_platform.md)
-  - [威胁情报平台](testing/security/hard/threat_intelligence_platform.md)
-  - [安全编排自动化响应平台](testing/security/hard/security_orchestration_platform.md)
-  - [欺骗技术防御平台](testing/security/hard/deception_technology_platform.md)
-  - [红队自动化平台](testing/security/hard/red_team_automation_platform.md)
-  - [安全合规性测试平台](testing/security/hard/security_compliance_platform.md)
-  - [安全混沌工程平台](testing/security/hard/security_chaos_engineering.md)
-  - [零信任架构评估平台](testing/security/hard/zero_trust_assessment_platform.md)
-  - [API安全测试平台](testing/security/hard/api_security_testing_platform.md)
-  - [供应链安全测试平台](testing/security/hard/supply_chain_security_platform.md)
-
-## 项目概述
-
-GenDev-Benchmark项目旨在提供一套全面的基准测试案例，用于评估AI代码生成工具在不同场景下的性能和能力。项目从三个维度组织案例：
-
-1. **研发维度**：评估AI工具在前端、后端、中间件、数据库和算法等领域的代码生成能力
-2. **测试维度**：评估AI工具在单元测试、集成测试、端到端测试、性能测试和安全测试等领域的测试代码生成能力
-3. **运维维度**：评估AI工具在容器化、CI/CD、基础设施、监控和安全运维等DevOps领域的配置和脚本生成能力
-
-每个维度下，案例按照技术领域和难度级别（低、中、高）进行分类，帮助用户全面评估不同AI工具的能力。
-
-## 评估标准
-
-每个案例将从以下几个方面进行评估：
-
-1. **正确性**：生成代码的功能正确性
-2. **完整性**：解决方案的完整程度
-3. **效率**：代码执行效率和资源利用
-4. **可维护性**：代码结构、命名和文档
-5. **创新性**：解决问题的创新方法和思路
-
-## 使用方法
-
-1. 选择要评估的维度、技术领域和难度级别
-2. 查看对应目录下的案例描述和要求
-3. 使用AI代码生成工具生成解决方案
-4. 根据评估标准对生成的代码进行评分
-5. 比较不同工具在各个维度的表现
-
-## 贡献指南
-
-欢迎贡献新的基准测试案例！请遵循以下步骤：
-
-1. Fork本仓库
-2. 创建新的分支
-3. 添加您的案例到相应的目录
-4. 提交Pull Request
-
-## 许可证
-
-MIT
